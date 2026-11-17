@@ -1,0 +1,6 @@
+step,description,n_patients
+1,Patients in the extract,600
+2,With at least one valid metformin fill,600
+3,With a baseline HbA1c in the 90 days before the index fill,597
+4,With at least one follow-up HbA1c (analytic cohort),597
+5,With a 12-month HbA1c (logistic regression cohort),557

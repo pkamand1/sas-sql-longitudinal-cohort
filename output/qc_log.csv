@@ -1,0 +1,8 @@
+check_id,table_name,check_name,n_rows,action
+1,raw_labs,Duplicate lab rows beyond the first copy,25,Keep the row with the lowest lab_id
+2,raw_labs,HbA1c reported in mmol/mol,12,Convert to percent: value / 10.929 + 2.15 (IFCC to NGSP)
+3,raw_labs,HbA1c (percent) outside 3 to 20,8,Exclude result
+4,raw_labs,Lab results dated after the extract date,5,Exclude result
+5,raw_pharmacy_fills,Fills dated before practice enrollment,6,Exclude fill
+6,raw_patients,Missing sex,9,Retain patient; reported as missing in Table 1
+7,"raw_labs, raw_pharmacy_fills",Records without a matching patient,0,Exclude record

@@ -1,0 +1,4 @@
+output/sas_results.pdf
+*.log
+*.lst
+__pycache__/
